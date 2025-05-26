@@ -1,0 +1,33 @@
+Para crear el logo de la pagina, se utilizo Favicon.io https://favicon.io
+
+El codigo .svg de los iconos se obtuvieron de Boxicons https://boxicons.com/
+
+Las imagenes de stock son parte de Unsplash https://unsplash.com/es
+
+El video de referencia para crear una pagina web es de AlexCG Design https://www.youtube.com/watch?v=9rnFV3vlJ3M
+
+Las sugerencias de fuente, color y diseño fueron dados por ChatGPT https://www.youtube.com/watch?v=9rnFV3vlJ3M
+
+Fuentes utilizadas sacadas directamente de Google Fonts https://fonts.google.com
+
+Foto de <a href="https://unsplash.com/es/@rpnickson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Roberto Nickson</a> en <a href="https://unsplash.com/es/fotos/edificio-con-piscina-infinita-MA82mPIZeGI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+Foto de <a href="https://unsplash.com/es/@mariolagr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">MARIOLA GROBELSKA</a> en <a href="https://unsplash.com/es/fotos/una-vista-de-un-cuerpo-de-agua-desde-un-balcon-YlgQf5N7u4Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+Foto de <a href="https://unsplash.com/es/@nicsandman20?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicholas Ng</a> en <a href="https://unsplash.com/es/fotos/silla-de-playa-de-madera-gris-rWvDXsTdJo4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+Foto de <a href="https://unsplash.com/es/@sakhan88?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Saad Khan</a> en <a href="https://unsplash.com/es/fotos/resort-con-vista-al-mar-azul-bajo-el-cielo-azul-y-blanco-durante-el-dia-425b2PhNuHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Foto de <a href="https://unsplash.com/es/@isaacquesada?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Isaac Quesada</a> en <a href="https://unsplash.com/es/fotos/litoral-y-cuerpo-de-agua-durante-la-hora-dorada-hHi2ozFhuPs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Configuracion de formulario https://www.youtube.com/watch?v=q4AbeYcjDw4
+
+API para formulario Formspree https://formspree.io
+
+Foto de <a href="https://unsplash.com/es/@upmane?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Elina Upmane</a> en <a href="https://unsplash.com/es/fotos/un-balcon-con-dos-sillas-y-una-mesa-con-un-sombrero-py2CWTJsh9I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+https://unsplash.com/es/fotos/mujer-sentada-cerca-de-la-ventana-TnXmSnu3svE
+
+Foto de <a href="https://unsplash.com/es/@bundo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bundo Kim</a> en <a href="https://unsplash.com/es/fotos/las-olas-rompen-en-una-playa-vista-desde-una-colina-LDbw5Bl-edo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+
