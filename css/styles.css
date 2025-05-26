@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+body{
+  font-family: "Cormorant Garamond", serif;
+  background-color: #1C1C1C;
+}
+
+:root{
+    --padding-container: 100px 0;
+    --colo-tittle: #001A49;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.top::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/hotel\ preview.jpg');
+    background-size: cover; /* utiliza la imagen para cubrir el fondo */
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0); /*recorta la imagen */
+    z-index: -1; /* envia la imagen al fondo*/
+}
+
+/*nav*/
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;  /* alinea los elementos uno al lado del otro */
+    align-items: center; /*centra verticalmente las opciones del menu*/
+    background-color: #1C1C1C;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.nav_title{
+    font-weight: 300;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav_links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav_img{
+    display: block;
+    width: 30px;
+}
+
+.nav_close{
+    display: var(--show, none);
+}
+
+
+/*top container*/
+
+/* Sin usar / Podria ser borrado del codigo */
+.top_container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.top_container_fade{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Sin usar / Podria ser borrado del codigo */
+.top_title{
+    font-size: 4rem;
+}
+
+
+/* Sin usar / Podria ser borrado del codigo */
+.top_paragraph{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.down_paragraph{
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Boton "solicitar ahora" que aparece en la pagina de inicio / Incluye los mismos valores que .fade-in / Se podria moficiar para duplicar valores? */
+.cta{
+    display: inline-block;
+    background-color: #1C1C1C;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.nav_form{
+    background: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.453);
+    width: 300px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.nav_form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fade-in y delay utilizados para efecto de aparicion en el titulo y parrafo dentro del top */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* main CSS */
+
+
+.mid{
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    color: #fff;
+    align-content: center;
+    padding-inline: 10%; /* Deja 10% del ancho libre por lado */
+}
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: #3A3A3A; /* gris oscurito */
+  z-index: -2;
+  pointer-events: none;
+}
+
+.left-bar {
+  left: 0;
+}
+
+.right-bar {
+  right: 0;
+}
+
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.block.left {
+  flex-direction: row;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.block.right {
+  flex-direction: row-reverse;
+  padding-left: 4%;
+  padding-right: 4%
+}
+
+.block img {
+  flex: 1 1 40%;
+  max-width: 40%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.block .text {
+  flex: 1 1 50%;
+}
+
+.block h2 {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.block p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.content.left {
+  flex-direction: row;
+}
+
+.content.right {
+  flex-direction: row-reverse;
+}
+
+.content img {
+  width: 45%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.text {
+  width: 45%;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about_paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.linea-blanca {
+  border: none;
+  height: 1px;
+  background-color: white;
+  opacity: 0.3; /* opcional: para que no sea muy fuerte */
+  margin: 40px 0; /* espacio arriba y abajo */
+}
+
+
+.final-message {
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 3rem;
+  padding-inline: 10%;
+  margin-bottom:  1rem;
+}
+
+.linea-brillante {
+  position: relative;
+  width: 100px;
+  height: 1px;
+  background: white;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.linea-brillante::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+  animation: shine 2.5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    left: 100%;
+  }
+}
+
+
+/* Pie de pagina */
+
+.under {
+  background-color: #2C2C2C;
+  color: #fff;
+  padding: 2rem 10%;
+  font-family: sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1.5rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 200px;
+}
+
+.footer-left h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer-nav li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  color: #fff;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.media-placeholder {
+  margin-left: 2%;
+  margin-right: 2%;
+  flex: 1 1 40%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+  background-size: cover;
+}
+.galeria-gastronomia {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.galeria-gastronomia h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.imagenes-gastronomia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.imagen-plato {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagen-plato:hover {
+    transform: scale(1.05);
+}
+.img-block {
+    width: 90%;
+    max-width: 900px; /* Puedes subir esto a 1000px o más si quieres */
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.img-block:hover {
+    transform: scale(1.02);
+}
